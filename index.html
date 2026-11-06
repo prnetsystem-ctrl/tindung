@@ -308,8 +308,8 @@ ul.wn{margin:0;padding-left:18px;font-size:13px;line-height:1.7}
     <h2>Đăng nhập</h2>
     <p>Dịch vụ tín dụng</p>
     <div id="login-error" class="login-error">Tên đăng nhập hoặc mật khẩu không đúng</div>
-    <input type="text" id="login-user" placeholder="Tên đăng nhập">
-    <input type="password" id="login-pass" placeholder="Mật khẩu">
+    <input type="text" id="login-user" placeholder="Tên đăng nhập" onkeypress="if(event.key === 'Enter') checkLogin()">
+    <input type="password" id="login-pass" placeholder="Mật khẩu" onkeypress="if(event.key === 'Enter') checkLogin()">
     <button onclick="checkLogin()">Truy cập</button>
   </div>
 </div>
